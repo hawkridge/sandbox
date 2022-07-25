@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {BehaviorSubject, interval} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  val = interval(1000);
   title = 'sandbox';
   user = {
     name: 'Sorax',
