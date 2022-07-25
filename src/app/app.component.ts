@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sandbox';
+  user = {
+    name: 'Sorax',
+    age: 341
+  }
 }
